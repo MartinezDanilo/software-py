@@ -1,0 +1,7 @@
+CREATE TABLE contact_info (
+    alumni_id INT PRIMARY KEY,
+    contact_number VARCHAR(15),
+    personal_email VARCHAR(255),
+    working_status VARCHAR(50),
+    FOREIGN KEY (alumni_id) REFERENCES `2024-2025`(id)
+);

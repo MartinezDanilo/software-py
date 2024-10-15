@@ -1,0 +1,6 @@
+CREATE TABLE `2024-2025ws` (
+    id INT AUTO_INCREMENT PRIMARY KEY,                    -- Auto-incrementing ID as primary key
+    al_id_no VARCHAR(50) NOT NULL,                        -- Alumni ID number
+    working_status VARCHAR(100) NOT NULL,                 -- Working status
+    FOREIGN KEY (al_id_no) REFERENCES `2024-2025`(al_id_no)  -- Set al_id_no as a foreign key referencing the 2024-2025 table
+);

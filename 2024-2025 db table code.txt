@@ -1,0 +1,14 @@
+CREATE TABLE `2024-2025` (
+    id INT AUTO_INCREMENT,                       -- Auto-incrementing ID
+    al_id_no VARCHAR(50) NOT NULL,              -- Set al_id_no as NOT NULL
+    last_name VARCHAR(100) NOT NULL,
+    first_name VARCHAR(100) NOT NULL,
+    middle_initial VARCHAR(10),
+    department VARCHAR(100) NOT NULL,
+    program VARCHAR(100) NOT NULL,
+    year_graduated INT NOT NULL,
+    contact_number VARCHAR(15) NOT NULL,
+    personal_email VARCHAR(100) NOT NULL,
+    PRIMARY KEY (al_id_no),                      -- Explicitly define al_id_no as the primary key
+    UNIQUE (id)                                  -- Ensure id is unique
+);
